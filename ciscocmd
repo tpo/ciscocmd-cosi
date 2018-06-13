@@ -475,7 +475,6 @@ foreach host $hostlist {
 #		if { [ catch { set loginbuf "$expect_out(2,string)" } ] } {
 #			set loginbuf "$expect_out(3,string)"
 #		}
-		set loginbuf $expect_out(0,string)
 		send_user "$host failed to connect\n"
 		if { [info exist forcenext] } {
 			# force next host
